@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>Tech Conference 2025</h1>
+        <h3>Registration Form</h3>
+        <p>June 15-17, 2025 | New Delhi, India</p>
+    </header>
+    
+    <form action="/register" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <br><br>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            <br><br>
+            
+            <label for="company">Company/Organization:</label>
+            <input type="text" id="company" name="company" placeholder="Company Name">
+            <br><br>
+            
+            <label for="designation">Designation:</label>
+            <input type="text" id="designation" name="designation" placeholder="Designation">
+
+        </fieldset>
+        <fieldset>
+            <legend>Registration Type</legend>
+            
+            <input type="radio" id="professional" name="reg_type" value="professional" checked>
+            <label for="professional">Professional (₹2,500)</label>
+            <br>
+            
+            <input type="radio" id="student" name="reg_type" value="student">
+            <label for="student">Student (₹1,000) - ID required</label>
+            <br>
+            
+            <input type="radio" id="speaker" name="reg_type" value="speaker">
+            <label for="speaker">Speaker (Complimentary)</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Workshop Selection</legend>
+            <p>Select up to 2 workshops (additional ₹500 per workshop)</p>
+            
+            <input type="checkbox" id="workshop1" name="workshops" value="ai">
+            <label for="workshop1">AI & Machine Learning (Oct 15)</label>
+            <br>
+            
+            <input type="checkbox" id="workshop2" name="workshops" value="cloud">
+            <label for="workshop2">Cloud Computing (Oct 16)</label>
+            <br>
+            
+            <input type="checkbox" id="workshop3" name="workshops" value="cyber">
+            <label for="workshop3">Cybersecurity (Oct 16)</label>
+            <br>
+            
+            <input type="checkbox" id="workshop4" name="workshops" value="web">
+            <label for="workshop4">Web Development (Oct 17)</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dietary Preferences</legend>
+            <select id="diet" name="diet">
+                <option value="none">No restrictions</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="jain">Jain</option>
+                <option value="halal">Halal</option>
+            </select>
+            <br><br>
+            
+            <label for="allergies">Any food allergies or special requests:</label>
+            <textarea id="allergies" name="allergies" rows="3" cols="40"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+            <p>Payment Options:</p>
+            <input type="radio" id="upi" name="payment" value="upi" checked>
+            <label for="upi">UPI Payment</label>
+            <br>
+            
+            <input type="radio" id="card" name="payment" value="card">
+            <label for="card">Credit/Debit Card</label>
+            <br>
+            
+            <input type="radio" id="netbanking" name="payment" value="netbanking">
+            <label for="netbanking">Net Banking</label>
+            <br><br>
+            
+            <label for="promo">Promo Code (if any):</label>
+            <input type="text" id="promo" name="promo">
+        </fieldset>
+
+        <input type="submit" value="Register Now">
+        <input type="reset" value="Clear Form">
+    </form>
+
+    <footer>
+        <p>Contact: registrations@techconf2025.in | +91 9136509126</p>
+        <p>© 2025 Tech Conference India. All rights reserved.</p>
+    </footer>    
+</body>
+</html>
